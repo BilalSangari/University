@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website Design-About page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <div id="fixed">Dark</div>
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="About.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="Blog.html">BLOG</a></li>
+                    <li><a href="Contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+        </nav>
+        <h1>About Us</h1>
+    </section>
+
+    <!------About Us Content------->
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1 >We are the world's largest university</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad veritatis sed rem velit minima placeat corporis quisquam at dolorem! Aut ipsam quae repellat sapiente obcaecati explicabo, ullam exercitationem deserunt laboriosam?</p>
+                <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+            </div>
+            <div class="about-col">
+                <img src="images/about.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+        <!-----Footer----->
+
+        <section class="footer">
+            <h4>About Us</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur provident id quo consequuntur, reiciendis magni ad unde repellat<br> sit sint assumenda ullam molestias repellendus, iste minima consectetur laudantium ducimus minus!
+            </p>
+            <div class="icons">
+                <i class="fa fa-phone"></i>
+                <i class="fa fa-home"></i>
+                <i class="fa fa-computer"></i>
+                <i class="fa fa-location"></i>
+            </div>
+            <p>Made <i class="fa fa-heart"></i> by Bilal Sangari</p>
+        </section>
+
+        <!-- JavaScript Code For Toggle The Menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showmenu(){
+            navLinks.style.right = "0";
+        }
+        function hidemenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+</body>
+</html>
